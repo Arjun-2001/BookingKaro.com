@@ -1,75 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	
-	<title>BookingKaro.com - About us</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="" />
-	
-	<!-- css --> 
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
-	<link href="css/bootstrap.min.css" rel="stylesheet" />
-	<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet"> 
-	<link href="css/flexslider.css" rel="stylesheet" /> 
-	<link href="css/style1.css" rel="stylesheet" />
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="#">
 
+<title>BookingKaro.com</title>
+
+<!-- Bootstrap core CSS -->
+<!-- <link href="./movie_files/bootstrap.min.css" rel="stylesheet"> -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="https://bootswatch.com/flatly/bootstrap.css" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-	<div id="wrapper"> 
+<!-- NAVBAR
+  ================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="">
 
-		<!-- start header -->
-		<?php include('includes/header.php') ?>
-		<!-- end header -->
-		<section id="inner-headline">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<h2 class="pageTitle">About Us</h2>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="content">
-			<section class="section-padding">
-				<div class="container">
-					<div class="row showcase-section">
-						<div class="col-md-6">
-							<img src="img/photos/intro.jpeg" alt="showcase image" width="500px;" height="272px;">
-						</div>
-						<div class="col-md-6">
-							<div class="about-text">
-								<h3>Our <span class="color">Company</span></h3>
-								<p><b>BookingKaro.com is a single platform solution to make all your Entertainment, Travel, Lifestyle plans sorted. It is a tech startup started in 2023 by Sage University Indore alumni <span class="color">Tanmay Dubey and Arjun Barade.</span> 
-								BookingKaro.com is a platform that offers a plethora of options when it comes to booking tickets.Movies, Parties, Events, and everything else you can imagine—BookingKaro.com has it all covered.</b></p>
-								<p>BookingKaro.com started out in 2023 is a platform of cloud-based ticket booking of Events, Movies, Sports, Plays and so on..</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</section>
-		<br>
-		<br>
-		<br>
-		<?php include('includes/footer.php') ?>
-	</div>
-	<a href="#" class="scrollup waves-effect waves-dark"><i class="fa fa-angle-up HillSide"></i></a>
-	<script src="js/jquery.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="materialize/js/materialize.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.fancybox.pack.js"></script>
-	<script src="js/jquery.fancybox-media.js"></script>  
-	<script src="js/jquery.flexslider.js"></script>
-	<script src="js/animate.js"></script>
-	<!-- Vendor Scripts -->
-	<script src="js/modernizr.custom.js"></script>
-	<script src="js/jquery.isotope.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/animate.js"></script> 
-	<script src="js/custom.js"></script>
-</body>
-</html>
+        <nav class="navbar navbar-default navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.php">Movies Booking</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse float-right">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.php">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="showtimes.php">Showtimes</a></li>
+
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </form>
+                </li>
+                <li><a href="javascript:void(0)" onclick="openLoginModal();"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <section class="showtime_page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p style="font-size: 3vw; font-weight: bold;text-align: center;">Movie Ticket is build For CSE391 project.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nisi ut consequuntur inventore! Quisquam sit, ut inventore minima quis rem animi voluptate harum, facilis aliquam earum at praesentium error! Ea.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nisi ut consequuntur inventore! Quisquam sit, ut inventore minima quis rem animi voluptate harum, facilis aliquam earum at praesentium error! Ea.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="container">
+      <footer>
+        <p class="pull-right"><a href="#">Made By Tanmay Dubey And Arjun Barade.</a></p>
+       
+      </footer>
+    </div>
+
+
+    <div class="modal fade login" id="loginModal">
+      <div class="modal-dialog login animated">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Login with</h4>
+          </div>
+          <div class="modal-body">  
+            <div class="box">
+              <div class="content">
+                <div class="social">
+                  <a class="circle github" href="/auth/github">
+                    <i class="fa fa-github fa-fw"></i>
+                  </a>
+                  <a id="google_login" class="circle google" href="/auth/google_oauth2">
+                    <i class="fa fa-google-plus fa-fw"></i>
+                  </a>
+                  <a id="facebook_login" class="circle facebook" href="/auth/facebook">
+                    <i class="fa fa-facebook fa-fw"></i>
+                  </a>
+                </div>
+                <div class="division">
+                  <div class="line l"></div>
+                  <span>or</span>
+                  <div class="line r"></div>
+                </div>
+                <div class="error"></div>
+                <div class="form loginBox">
+                  <form method="post" action="/login" accept-charset="UTF-8">
+                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                    <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="content registerBox" style="display:none;">
+                <div class="form">
+                  <form method="post" html="{:multipart=>true}" data-remote="true" action="/register" accept-charset="UTF-8">
+                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                    <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                    <input class="btn btn-default btn-register" type="submit" value="Create account" name="commit">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="forgot login-footer">
+              <span>Looking to 
+                <a href="javascript: showRegisterForm();">create an account</a>
+                ?</span>
+              </div>
+              <div class="forgot register-footer" style="display:none">
+                <span>Already have an account?</span>
+                <a href="javascript: showLoginForm();">Login</a>
+              </div>
+            </div>        
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+  </html>
