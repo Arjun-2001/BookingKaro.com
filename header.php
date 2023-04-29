@@ -1,59 +1,24 @@
-<?php 
-if (!session_id()) {
-	session_start();
-} 
-include 'config.php';
-if (empty($_SESSION['user'])) {
-	header('Location: index.php');
-}
-?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<link href="js/bootstrap.min.css" rel='stylesheet' type='text/css' />
-	<link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
-
-	<style type="text/css">
-		.fontColor{
-			color: white;
-			font-size: 1.0vw;
-		}
-	</style>
-</head>
-<body>
-
-
-	<!-- header-section-starts -->
-	<div class="header">
-		<div class="header-top-strip">
-			<div class="container">
-				<div class="header-top-left">
-					<ul>
-						<?php 
-						$userId=$_SESSION['user'];
-						$res=$conn->query("select * from user where userId='$userId';");
-						$row=$res->fetch_object();
-
-						echo "
-						
-						<li ><a href='#'><span class='glyphicon glyphicon-user'> </span>". strtoupper($row->userName)."</a></li>"
-						
-						?>
-					</ul>
-				</div>
-				<div class="header-right">
-					<div class="cart box_1">
-						<a class="fontColor" href="logout.php"> <span class='glyphicon glyphicon-off'> Logout </a>	
-						
+<header>
+			<div class="navbar navbar-default navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.php"><i class="icon-info-blocks material-icons"></i>BookingKaro.com</a>
+					</div>
+					<div class="navbar-collapse collapse ">
+						<ul class="nav navbar-nav">
+							<li class="HillSide"><a class="waves-effect waves-dark" href="index.php">Home</a></li> 
+							<li><a class="waves-effect waves-dark" href="#">Services</a></li>
+							<li><a class="waves-effect waves-dark" href="offers.php">Offers</a></li>
+							<li><a class="waves-effect waves-dark" href="about.php">About Us</a></li>
+							<li><a class="waves-effect waves-dark" href="contact.php">Contact Us</a></li>
+							<li><a class="waves-effect waves-dark" href="OMTB/login.php">Login / Register</a></li>
+						</ul>
 					</div>
 				</div>
-				<div class="clearfix"> </div> 
 			</div>
-		</div>
-	</div>
-
-</body>
-</html>
-
-
+		</header>
